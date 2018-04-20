@@ -71,7 +71,7 @@ app.get('/scrape', function(req, res) {
     });
   });
 
-  res.send('<a href="index.html">Scrape Complete</a>');
+  res.send('info');
 });
 
 
@@ -85,7 +85,6 @@ app.get('/articles', function(req, res){
 		} 
 
 		else {
-			console.log("WORKING STUFF");
 			res.json(doc);
 		}
 	});
